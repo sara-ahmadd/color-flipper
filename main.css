@@ -1,0 +1,66 @@
+* {
+  --main-background: #eee;
+  --main-font-color: #34c0eb
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main-background);
+  text-align: center;
+  color: var(--main-font-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px 20px;
+  background-color: White;
+  box-shadow: 1px 1px 15px #ffffff;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 20px
+}
+
+.parent {
+  margin: 30px auto;
+  background-color: #eee;
+  width: fit-content;
+  padding: 10px 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: White;
+  border-radius: 10px;
+}
+
+.parent .background {
+  margin-right: 10px
+}
+
+[name="click-me"] {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--main-font-color);
+  transition: 0.2s linear;
+}
+
+[name="click-me"]:hover {
+  color: white;
+  background-color: var(--main-font-color);
+}
